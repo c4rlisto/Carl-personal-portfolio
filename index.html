@@ -3,44 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="theme-color" content="#101b2d">
+    <meta name="description" content="Carl Kiprono's personal portfolio — software engineering student, curious creator, and lifelong learner.">
+    <title>Carl Kiprono | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <h3>
-      <img 
-        src="images/Snapchat-1238015902.jpg" 
-        alt="Carl Kiprono" 
-        style="width:200px;height:200px; border-radius: 50%;">
-    </h3>
-    <h1>CARL KIPRONO</h1>
-    <h2>HOME</h2>
-      <p>
-        My name is Carl Kiprono, I'm 18 yrs, born and raised in Eldoret by both parents.
-        I am currently a student at Moringa School studying software engineering.
-        I love playing football, listening to music and coding.
-        I am a friendly person and I love meeting new people.
-      </p>
-    <h2>ABOUT</h2>
-      <p>
-         I was able to study all the way to high school.
-         I did my high school at Kapsabet High School.
-         I was to do computer in high school but the school did not offer computer studies to all students,
-         which is why I am here at Moringa School to learn more about computers.
-         I always had a passion for computers and I would love to be a software engineer in future.
-      </p>
-    <h2>SKILLS</h2>
-       <p>
-        I am a Microsoft Office Specialist.
-       </p>
-    <h2>PROJECTS</h2>
-         <p>
-          I have done a few projects in Moringa School.
-          One of the projects is a personal portfolio website using HTML and CSS.
-         </p>
-    <h2>CONTACT ME</h2>
-        <p>
-            You can reach me through my email:
-             <a href="mailto:carlkiprono00@gmail.com">carlkiprono00@gmail.com</a> 
-        </p>
+    <header class="hero">
+        <div class="hero-copy">
+            <p class="eyebrow"><span class="status-dot"></span> Eldoret, Kenya · Software Engineering Student</p>
+            <h1>Carl <span>Kiprono</span></h1>
+            <p class="hero-intro">
+                I’m a friendly, curious person who loves coding, playing football, listening to music, and meeting new people.
+            </p>
+            <a class="button" href="mailto:carlkiprono00@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="portrait-frame">
+            <img
+                class="portrait"
+                src="images/Snapchat-1238015902.jpg"
+                alt="Portrait of Carl Kiprono">
+            <span class="portrait-caption">Always learning, always building.</span>
+        </div>
+        <a class="scroll-cue" href="#about" aria-label="Scroll to About me">↓</a>
+    </header>
+
+    <nav class="site-nav" aria-label="Main navigation">
+        <a class="brand" href="#">CK<span>.</span></a>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <main class="content-grid">
+        <section class="card about-card" id="about">
+            <p class="section-label">01 / A little about me</p>
+            <h2>Building a future<br>in technology.</h2>
+            <p>
+                Born and raised in Eldoret, I studied at Kapsabet High School. I have always been passionate about computers and wanted to learn more about them. I’m now studying software engineering at Moringa School and working toward my goal of becoming a software engineer.
+            </p>
+        </section>
+
+        <section class="card skills-card" id="skills">
+            <p class="section-label">02 / What I bring</p>
+            <h2>Skills</h2>
+            <p>I am a Microsoft Office Specialist.</p>
+            <div class="skill-tags">
+                <span>Microsoft Office Specialist</span>
+                <span>HTML</span>
+                <span>CSS</span>
+            </div>
+        </section>
+
+        <section class="card projects-card" id="projects">
+            <p class="section-label">03 / Things I’ve made</p>
+            <h2>Projects</h2>
+            <p>
+                I have done a few projects at Moringa School. One of them is this personal portfolio website, built with HTML and CSS.
+            </p>
+            <div class="project-note"><span aria-hidden="true">✳</span> Personal portfolio <span class="project-tech">HTML · CSS</span></div>
+        </section>
+
+        <section class="card contact-card" id="contact">
+            <p class="section-label">04 / Say hello</p>
+            <h2>Let’s connect.</h2>
+            <p>I’d love to hear from you. Send me an email and let’s start a conversation.</p>
+            <a class="email-link" href="mailto:carlkiprono00@gmail.com">carlkiprono00@gmail.com <span aria-hidden="true">↗</span></a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <span>© 2026 Carl Kiprono</span>
+        <span>Made with curiosity in Eldoret.</span>
+    </footer>
 </body>
 </html>
